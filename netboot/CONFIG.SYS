@@ -1,0 +1,22 @@
+DEVICE=a:\DOS\HIMEM.SYS /TESTMEM:OFF
+DEVICE=a:\DOS\EMM386.EXE NOEMS
+DOS=HIGH,UMB
+shell=a:\command.com /E:1024 /P
+lastdrive=z
+
+;For Microsoft RAM Drive.
+;You can find Ramdrive.sys in the Tools.zip file.
+;Copy Ramdrive.sys to a:\DOS
+;To create a RAM Drive of 2MB in Extended Memory
+;comment out XMSDSK in autoexec.bat,
+;and uncomment the following line:
+
+;DEVICE=a:\DOS\ramdrive.sys 2048 /E
+
+DEVICEHIGH=a:\dos\ansi.sys
+DEVICEHIGH=a:\ifshlp.sys
+FILES=20
+BUFFERS=30
+
+
+
